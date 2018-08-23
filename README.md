@@ -43,8 +43,7 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 * [第8章-内建类及其方法](docs/第8章-内建类及其方法/第8章-内建类及其方法.md)
 * [第9章-垃圾回收](docs/第9章-垃圾回收/第9章-垃圾回收.md)
 * [第10章-命令行及调试](docs/第10章-命令行及调试/第10章-命令行及调试.md)
-
-
+* [勘误](docs/勘误/勘误.md)
 
 ## 总结
 
