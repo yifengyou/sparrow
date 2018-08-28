@@ -25,7 +25,8 @@ static void runFile(const char* path) {
    
    while (parser.curToken.type != TOKEN_EOF) {
       getNextToken(&parser);
-      printf("%dL-%d: %s [", parser.curToken.lineNo, parser.curToken.type-1,tokenArray[parser.curToken.type-1]);
+      printf("%dL-tokenArray[%d]: %s [", parser.curToken.lineNo, \
+      	parser.curToken.type,tokenArray[parser.curToken.type]);
       uint32_t idx = 0;
       while (idx < parser.curToken.length) {
 	 	printf("%c", *(parser.curToken.start+idx++));

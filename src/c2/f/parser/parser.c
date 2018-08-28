@@ -42,7 +42,7 @@ static TokenType idOrkeyword(const char* start, uint32_t length) {
    while (keywordsToken[idx].keyword != NULL) {
       if (keywordsToken[idx].length == length && \
 	    memcmp(keywordsToken[idx].keyword, start, length) == 0) {
-	 return keywordsToken[idx].token;
+	 	return keywordsToken[idx].token-1;
       }
       idx++;
    }
@@ -381,9 +381,9 @@ void getNextToken(Parser* parser) {
 	       parseId(parser, TOKEN_UNKNOWN);  //解析变量名其余的部分
 	    } else {
 	       if (parser->curChar == '#' && matchNextChar(parser, '!')) {
-		  skipAline(parser);
-		  parser->curToken.start = parser->nextCharPtr - 1;  //重置下一个token起始地址
-		  continue;
+			  skipAline(parser);
+			  parser->curToken.start = parser->nextCharPtr - 1;  //重置下一个token起始地址
+			  continue;
 	       } 
 	       LEX_ERROR(parser, "unsupport char: \'%c\', quit.", parser->curChar);
 	    }
