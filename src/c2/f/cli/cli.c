@@ -22,12 +22,13 @@ static void runFile(const char* path) {
    initParser(vm, &parser, path, sourceCode);
 
    #include "token.list"
+   
    while (parser.curToken.type != TOKEN_EOF) {
       getNextToken(&parser);
-      printf("%dL: %s [", parser.curToken.lineNo, tokenArray[parser.curToken.type]);
+      printf("%dL-%d: %s [", parser.curToken.lineNo, parser.curToken.type-1,tokenArray[parser.curToken.type-1]);
       uint32_t idx = 0;
       while (idx < parser.curToken.length) {
-	 printf("%c", *(parser.curToken.start+idx++));
+	 	printf("%c", *(parser.curToken.start+idx++));
       }
       printf("]\n");
    }

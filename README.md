@@ -4,7 +4,7 @@
 
 * 《自制编程语言》源码 ```src/sparrow.tgz```
 * 《自制编程语言》读书笔记 ```docs/*```
-* 《自制编程语言》样章阅读 ```reference/自制编程语言-样章.pdf```
+* 《自制编程语言》样章阅读 ```reference/自制编程语言-样章.pdf等```
 
 ## 相关站点
 
@@ -32,7 +32,8 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 基础开发环境
 
 1. 宿主操作系统采用CentOS 6.8
-2. 编译器Gcc版本 gcc version 4.4.7 20120313
+2. 编译器Gcc版本 gcc version 4.4.7 20120313（高版本可能需要解决编译问题，看下面常见问题解决）
+
 
 ## 《自制编程语言》目录
 
@@ -65,7 +66,7 @@ make: *** [spr] Error 1
 
 解决方法：
 
-修改makefile文件,在CFLAGS中添加 -fgnu89-inline
+修改makefile文件,在CFLAGS中添加```-fgnu89-inline```
 
 ```
 CC = gcc
