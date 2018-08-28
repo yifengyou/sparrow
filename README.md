@@ -91,6 +91,7 @@ find . -name "makefile" | xargs perl -pi -e 's/-Wsystem-headers/-Wsystem-headers
 
 ![1535422644606.png](image/1535422644606.png)
 
+之后便可在高版本gcc中编译，本人使用的版本是gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) 运行在Ubuntu 18.04.1 LTS x64
 
 ## 总结
 
