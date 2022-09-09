@@ -117,6 +117,6 @@ void symbolTableClear(VM*, SymbolTable* buffer);
 #define RUN_ERROR(...)\
    errorReport(NULL, ERROR_RUNTIME, __VA_ARGS__)
 
-#define DEFAULT_BUfFER_SIZE 512
+#define DEFAULT_BUFFER_SIZE 512
 
 #endif
