@@ -50,10 +50,10 @@ void symbolTableClear(VM* vm, SymbolTable* buffer) {
 //通用报错函数
 void errorReport(void* parser, 
       ErrorType errorType, const char* fmt, ...) {
-   char buffer[DEFAULT_BUfFER_SIZE] = {'\0'};
+   char buffer[DEFAULT_BUFFER_SIZE] = {'\0'};
    va_list ap;
    va_start(ap, fmt);
-   vsnprintf(buffer, DEFAULT_BUfFER_SIZE, fmt, ap);
+   vsnprintf(buffer, DEFAULT_BUFFER_SIZE, fmt, ap);
    va_end(ap);
 
    switch (errorType) {
