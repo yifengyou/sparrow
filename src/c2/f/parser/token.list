@@ -13,7 +13,7 @@ char* tokenArray[] = {
    "WHILE",	     	   
    "FOR",	     	   
    "BREAK",	     	   
-   "CONTINUE"
+   "CONTINUE",
    "RETURN",     	   
    "NULL",	     	   
    "CLASS",	     	   
