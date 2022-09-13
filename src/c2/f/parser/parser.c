@@ -42,7 +42,7 @@ static TokenType idOrkeyword(const char* start, uint32_t length) {
    while (keywordsToken[idx].keyword != NULL) {
       if (keywordsToken[idx].length == length && \
 	    memcmp(keywordsToken[idx].keyword, start, length) == 0) {
-	 	return keywordsToken[idx].token-1;
+	 	return keywordsToken[idx].token;
       }
       idx++;
    }
